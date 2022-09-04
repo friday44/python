@@ -19,7 +19,7 @@ else:
 for x in True, False:
      for y in True, False:
         for z in True, False:
-            print((not(x or y or z)), (not(x) and not(y) and not(z)))
+            print((not(x or y or z)) == (not(x) and not(y) and not(z)))
 
 
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y), 
