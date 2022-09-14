@@ -60,11 +60,11 @@ print(a) """
 """ f = 1 > 2 or 4 < 6
 print(f) """
 
-from re import T
+""" from re import T """
 
 
-f = [1,2,3,4]
-""" print(f)
+""" f = [1,2,3,4]
+print(f)
 print(not 2 in f) """
 
 """ is_odd = not f[0] % 2
@@ -152,7 +152,7 @@ print(colors == ['red', 'green', 'blue', 'gray']) # True
 colors.remove('red')    # del colors[0] # удалить элемент """
 
 # Функции
-""" def f(x):
+def f(x):
     if x == 1:
         return 'Целое'
     elif x == 2.3:
@@ -160,7 +160,7 @@ colors.remove('red')    # del colors[0] # удалить элемент """
     else:
         return
 
-arg = 2.3
+"""arg = 2.3
 print(f(1)) # Целое
 print(f(2.3)) # 23
 print(f(28)) # None
