@@ -16,12 +16,11 @@ print(sum) """
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
 
-""" list = [2, 3, 4, 5, 6]
+list = [2, 3, 4, 5, 6]
 res = []
-for i in range(len(list) // 2):
-    res[i] = list[i] * list[len(list) - i]
-    res.append(res[i])
-print(res) """
+for i in range((len(list) // 2) + 1):
+    res.append(list[i] * list[len(list) - i - 1])
+print(res)
 
 
 
@@ -52,7 +51,7 @@ print(num_2) """
 # 5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 # для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-n = int(input('Введите число: '))
+""" n = int(input('Введите число: '))
 fib = [0, 1]
 f1 = 0
 f2 = 1
@@ -69,4 +68,4 @@ for i in range(1, n):
     f1 = f2
     f2 = f_sum
     fib = [f2] + fib
-print(fib)
+print(fib) """
