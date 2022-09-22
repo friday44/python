@@ -106,14 +106,18 @@ while i < len(s_input):
 print(s_output) """
 
 
-""" s_input = '3d2a3c2y1f'
-s_output = list(filter(lambda x: int(x) if x.isdigit() else x, s_input))
+s_input = '3d2a3c2y1f'
+s_output = ''
+s_input = list(filter(lambda x: int(x) if x.isdigit() else x, s_input))
 i = 0
-while i < len(s_input):
-    if int(s_output[i]) < 9:
-        temp = s_output[i]
-        del s_output[i]
-        s_output.insert(i, s_input[i + 1])
+while i in s_input:
+    if s_input.isdigit(i):
+        temp = i
+        del i
+        s_output.append(temp+1 * i)
         i = i + 1
+    else:
+        s_output.append(i)
 print(s_output)
- """
+
+
