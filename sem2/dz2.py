@@ -29,8 +29,6 @@ while i <= n:
 
 """ k = int(input("Введите целое число: "))
 sum = 0.0
-print(type(k))
-print(type(sum))
 for i in range(1, k):
     sum = round((sum + (1 + 1 / i) ** i), 2)
     print(f'Сумма элементов до {i}го включительно: {sum}') """
