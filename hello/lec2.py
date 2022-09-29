@@ -10,11 +10,11 @@ data.close() """
     data.write('line 2\n') """
 # закрытие не требуется
 
-""" path = 'file.txt'
+path = 'file.txt'
 data = open(path, "r")
 for line in data:
     print(line)
-data.close()  """
+data.close()
 
 
 # функции

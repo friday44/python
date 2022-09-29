@@ -152,13 +152,13 @@ print(colors == ['red', 'green', 'blue', 'gray']) # True
 colors.remove('red')    # del colors[0] # удалить элемент """
 
 # Функции
-def f(x):
+""" def f(x):
     if x == 1:
         return 'Целое'
     elif x == 2.3:
         return 23
     else:
-        return
+        return """
 
 """arg = 2.3
 print(f(1)) # Целое
