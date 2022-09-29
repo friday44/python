@@ -1,18 +1,11 @@
-def get_comand():
-    print('1 - добавление записи в книгу')
-    print('2 - поиск записи в книге')
-    return input('Введите номер операции: ')
-
-def get_data():
-    book_entry = []
-    book_entry.append(input('Введите фамилию: '))
-    book_entry.append(input('Введите имя: '))
-    book_entry.append(input('Введите номер телефона: '))
-    book_entry.append(input('Введите описание: '))
-    return book_entry
-
-def get_find_string():
-    return input('Введите слово для поиска: ')
-
-def print_data(data):
-    print(data)
+def find_data(find_str):
+    # path = 'book.txt'
+    data = open('book.txt', "r")
+    for line in data:
+        result = []
+        if find_str in line:
+            result.append(line)
+        else:
+            result.append('Не найдено')
+    data.close()
+    return result
