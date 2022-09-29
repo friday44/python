@@ -3,12 +3,9 @@ import book_save as bs
 import book_find as bf
 
 def button_click():
-    command = ui.get_comand()
-    if command == '1':
+    operation = ui.get_comand()
+    if operation == '1':
         bs.log_data(ui.get_data())
-    elif command == '2':
-        bf.find_data()
-    else:
-        return
-
+    elif operation == '2':
+        ui.print_data(bf.find_data(ui.get_find_string()))
 
