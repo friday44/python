@@ -8,4 +8,5 @@ def button_click():
         bs.log_data(ui.get_data())
     elif operation == '2':
         ui.print_data(bf.find_data(ui.get_find_string()))
+  
 
