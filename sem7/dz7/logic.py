@@ -10,3 +10,15 @@ def button_click():
         ui.print_data(bf.find_data(ui.get_find_string()))
   
 
+def button_click():
+    operation = 0
+    while operation != '4':
+        operation = ui.get_comand()
+        if operation == '1':
+            bs.log_data(ui.get_data())
+            operation = ui.get_comand()
+        elif operation == '2':
+            ui.print_data(bf.find_data(ui.get_find_string()))
+            operation = ui.get_comand()
+        else:
+            operation = '4'
